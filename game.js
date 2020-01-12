@@ -2,6 +2,8 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(30);
+      angleMode = "degrees";
+      println("This uses OsuKi-ai!'s code!");
         
         
         
