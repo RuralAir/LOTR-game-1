@@ -7792,7 +7792,8 @@ cannon_basic:[
 /*
 This animation was a lot of fun to make even though it was really long.
 
-Note: I wanted to make a little pile of cannonballs and another for the powder that the guy would take from while reloading. Then I realized that they would move when the cannon rotated, so I just faded them in instead.
+Note: I wanted to make a little pile of cannonballs and another for the powder that the guy would take from while reloading.
+Then I realized that they would move when the cannon rotated, so I just faded them in instead.
 */
     
 //lighting fuse
@@ -12249,7 +12250,9 @@ for(var j = saveVars.fire_bolt.length; j--;){
             break;
         }
         //load bar and stuff:
-        background(100+cos(loadNum)*127, 100+sin(loadNum)*127, 100+-sin(loadNum*4)*127);
+        background(127+cos((loadNum)*0.0174532925)*127,
+                   127+sin((loadNum+120)*0.0174532925)*127,
+                   127+cos((loadNum-120)*0.0174532925)*127);
         textSize(20);
         fill(50, 255, 50);
         text("Loading. "+loadNum+"% done", 200, 180);
