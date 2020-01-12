@@ -3,7 +3,7 @@ var programCode = function(processingInstance) {
       size(400, 400); 
       frameRate(30);
       angleMode = "degrees";
-      println("This uses OsuKi-ai!'s code!");
+      println("This is OsuKi-ai!. I'm testing to see if this will update directly from my gitHub script");
         
         
         
