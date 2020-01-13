@@ -1,7 +1,9 @@
 var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
-      frameRate(30);
+      frameRate(60);
+        angleMode = "degrees";
+        println("Testing stage 1.");
 
 
         /*credit to my pixel art generator for these graphics:
@@ -12246,9 +12248,9 @@ for(var j = saveVars.fire_bolt.length; j--;){
             break;
         }
         //load bar and stuff:
-        background(127+cos((loadNum)*0.0174532925)*127,
-                   127+sin((loadNum+120)*0.0174532925)*127,
-                   127+cos((loadNum-120)*0.0174532925)*127);
+        background(127+cos((loadNum*3)*0.0174532925)*127,
+                   127+sin(((loadNum*3)+120)*0.0174532925)*127,
+                   127+cos(((loadNum*3)-120)*0.0174532925)*127);
         textSize(20);
         fill(50, 255, 50);
         text("Loading. "+loadNum+"% done", 200, 180);
